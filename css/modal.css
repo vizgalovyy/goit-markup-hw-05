@@ -71,7 +71,7 @@
 }
 .modal-btn:hover,
 .modal-btn:focus {
-  background-color: #4d5ae5;
+  background-color: #404bbf;
 }
 .modal-btn:hover > .modal-btn-icon,
 .modal-btn:focus > .modal-btn-icon {
@@ -107,8 +107,10 @@
   height: 40px;
   padding: 8px 38px;
 
-  font-size: 18px;
-  line-height: 1.33;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  background-color: #fcfcfc;
 
   outline: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -134,7 +136,7 @@
 }
 .modal-form-comment {
   width: 100%;
-  height: 138px;
+  height: 120px;
   padding: 8px 16px;
 
   font-size: 12px;
@@ -152,24 +154,25 @@
   border-color: #4d5ae5;
 }
 .modal-form-comment::placeholder {
-  color: rgba(17, 17, 17, 0.4);
+  color: rgba(46, 47, 66, 0.4);
 }
 .modal-form-agreement {
+  margin-top: 8px;
   margin-bottom: 24px;
 }
 .modal-form-policy {
   font-size: 12px;
   letter-spacing: 0.04em;
+  line-height: 1.17;
   color: #8e8f99;
-  color: rgba(17, 17, 17, 0.7);
 }
 .modal-form-checkbox {
   display: inline-flex;
   justify-content: center;
   align-items: center;
 
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   cursor: pointer;
   margin-right: 8px;
   border-radius: 2px;
@@ -199,6 +202,7 @@
   opacity: 1;
 }
 .modal-form-link {
+  text-decoration: underline;
   color: #4d5ae5;
 }
 .modal-form-btn {
@@ -213,9 +217,14 @@
   width: 169px;
   height: 56px;
 
+  font-weight: 500;
+  letter-spacing: 0.04em;
+
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
   color: #fff;
+  transition: 300ms ease-out;
+  transition-property: background-color;
 }
 .modal-form-btn:hover,
 .modal-form-btn:focus {
